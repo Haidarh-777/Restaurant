@@ -1,5 +1,3 @@
-package project;
-
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -131,7 +129,8 @@ public class SignFrame extends JFrame implements ActionListener {
                         new firstFrame();
 
                     } else {
-                        JOptionPane.showMessageDialog(null, "wrong account", " ", JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "wrong account", " ",
+                         JOptionPane.ERROR_MESSAGE);
                     }
 
                 } else { // manager
@@ -143,7 +142,8 @@ public class SignFrame extends JFrame implements ActionListener {
                         new firstFrame();
 
                     } else {
-                        JOptionPane.showMessageDialog(null, "wrong account", " ", JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "wrong account", " "
+                        , JOptionPane.ERROR_MESSAGE);
                     }
 
                 }
@@ -161,7 +161,8 @@ public class SignFrame extends JFrame implements ActionListener {
                         new firstFrame();
 
                     } else {
-                        JOptionPane.showMessageDialog(null, "change your informations", " ", JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "change your informations", " "
+                        , JOptionPane.ERROR_MESSAGE);
                     }
 
                 } else { // manager
@@ -173,7 +174,8 @@ public class SignFrame extends JFrame implements ActionListener {
                         this.dispose();
                         new firstFrame();
                     } else {
-                        JOptionPane.showMessageDialog(null, "change your informations", " ", JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "change your informations", " "
+                        , JOptionPane.ERROR_MESSAGE);
                     }
 
                 }

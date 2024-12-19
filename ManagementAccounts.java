@@ -1,5 +1,3 @@
-package project;
-
 import java.io.Serializable;
 
 public class ManagementAccounts implements Serializable {
