@@ -7,15 +7,20 @@ public class firstFrame extends JFrame {
     JLabel label;
 
     firstFrame() {
-        frontImage = new ImageIcon("frontFrame.jpg");
+        
+        label = new JLabel();
+        label.setBounds(0, 0, 800, 850);
+        try{
+            ImageIcon pic = new ImageIcon(Main.class.getResource("frontFrame.jpg"));
+            label.setIcon(pic);
+            label.setOpaque(true);
+        }catch(Exception e){
+            System.out.println("image not found");
+        }
+
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(665, 850);
         this.setLayout(null);
-
-        label = new JLabel();
-        label.setBounds(0, 0, 800, 850);
-        label.setIcon(frontImage);
-        label.setOpaque(true);
 
         this.add(label);
         this.setLocationRelativeTo(null);
